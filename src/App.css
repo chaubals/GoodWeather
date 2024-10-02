@@ -5,7 +5,7 @@
 
 h1 {
   font-size: 4rem; /* Default font size for larger screens */
-  margin: 0; /* Remove default margin */
+  margin: 20px; /* Remove default margin */
   padding: 0; /* Remove default padding */
   text-align: center; /* Center align the heading */
 }
@@ -17,10 +17,4 @@ h1 {
     margin: 0 auto; /* Center align on mobile */
     padding: 0; /* Ensure no extra padding */
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 }

@@ -58,19 +58,19 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-300">
-      <h1 className="text-4xl font-bold mb-4 text-blue-600 sm:text-3xl md:text-2xl mx-4">Welcome to GoodWeather!!</h1>
+      <h1 className="text-4xl font-bold text-blue-600 sm:text-3xl">Welcome to GoodWeather!!</h1>
       <input
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
         onKeyDown={handleKeyDown} //Add onKeyDown event listener here
         placeholder="Enter City Name"
-        className="border border-gray-300 p-2 rounded-lg w-full max-w-xs mb-4"
+        className="border border-gray-300 p-2 rounded-lg w-full max-w-xs mb-4 h-10"
       />
       <button
         ref={buttonRef} //Attach the ref to the button
         onClick={getWeather}
-        className={`bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 ${
+        className={`bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 h-15 ${
           isPressed ? 'bg-blue-700' : ''
         }`} // Apply a "pressed" style when Enter is pressed
       >
