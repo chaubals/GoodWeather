@@ -18,3 +18,9 @@ h1 {
     padding: 0; /* Ensure no extra padding */
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
