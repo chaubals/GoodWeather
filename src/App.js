@@ -9,7 +9,8 @@ function App() {
   const [weather, setWeather] = useState(null); //initial value of weather will be blank
   const [error, setError] = useState(null); //state for error message
   const [isPressed, setIsPressed] = useState(false); //state to track if the button is pressed
-  const API_KEY = '1b2eee374bad025e74aeef6b3b6f5cab';
+  //const API_KEY = '1b2eee374bad025e74aeef6b3b6f5cab';
+  const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
   //Create a reference for the "Get Weather" button
   const buttonRef = useRef(null);
@@ -57,7 +58,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-300">
-      <h1 className="text-4xl font-bold mb-4 text-blue-800 -m-10">Welcome to GoodWeather!!</h1>
+      <h1 className="text-4xl sm:text-3xl font-bold mb-4 text-blue-800 -m-10">Welcome to GoodWeather!!</h1>
       <input
         type="text"
         value={city}
