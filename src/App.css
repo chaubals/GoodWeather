@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Default styles for the title */
+h1 {
+  font-size: 4rem; /* Default size */
+  line-height: 1.2; /* Adjust line height */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+}
